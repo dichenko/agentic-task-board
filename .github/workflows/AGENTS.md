@@ -38,3 +38,39 @@ Before finishing a task, run:
 npm run lint
 npm test
 npm run build
+
+If any check fails:
+
+fix the issue;
+run the checks again;
+report what failed and how it was fixed.
+Testing rules
+Add or update tests for every behavior change.
+Keep existing tests passing.
+Prefer simple API tests with Supertest.
+Cover both success and basic error cases when relevant.
+Pull request rules
+
+Every pull request must include:
+
+Summary
+Changes
+Validation
+Risk
+Notes
+
+Keep PRs small. One task should usually produce one PR.
+
+Review guidelines
+
+When reviewing, focus on:
+
+broken tests or missing tests;
+accidental public API changes;
+unnecessary dependencies;
+unrelated rewrites;
+unsafe Git operations;
+missing validation;
+unclear error handling.
+
+Treat unrelated refactoring as a problem unless the task explicitly requested it.
